@@ -2487,7 +2487,17 @@ table.dataTable.dtr-inline.collapsed tbody th:first-child:before {
     -webkit-box-shadow: none !important;
     box-shadow: none !important;
 }
+ td i{
+  width: 20px;
+  margin-right: 5px;
+  font-size: 20px;
+  top: 1px;
+  position: relative;
+  text-align: center;
+  }
 
+  .blue{color: #428bca;}
+  .rouge{color: red;}
 
 
 /***** 9.3 MEDIA MANAGER STYLES *****/

@@ -8,15 +8,14 @@
         <meta name="description" content="">
         <meta name="author" content="">
 
-        <title>Chain Responsive Bootstrap3 Admin</title>
+        <title>StudentBox Admin</title>
 
         <link href="css/style.default.css" rel="stylesheet">
+		<!--ADD-->
+        <link href="css/toggles.css" rel="stylesheet" />
+		<link href="css/select2.css" rel="stylesheet" />
 
-        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!--[if lt IE 9]>
-        <script src="js/html5shiv.js"></script>
-        <script src="js/respond.min.js"></script>
-        <![endif]-->
+
     </head>
 
     <body>
@@ -174,72 +173,61 @@
         
         <section>
             <div class="mainwrapper">
-                <div class="leftpanel">
+                 <div class="leftpanel">
                     <div class="media profile-left">
                         <a class="pull-left profile-thumb" href="profile.html">
-                            <img class="img-circle" src="images/photos/profile.png" alt="">
+                            <img class="img-circle" src="images/photos/user1.png" alt="">
                         </a>
                         <div class="media-body">
-                            <h4 class="media-heading">Elen Adarna</h4>
-                            <small class="text-muted">Beach Lover</small>
+                            <h4 class="media-heading">Rhanim Rida</h4>
+                            <small class="text-muted">Webmaster</small>
                         </div>
                     </div><!-- media -->
                     
                     <h5 class="leftpanel-title">Navigation</h5>
                     <ul class="nav nav-pills nav-stacked">
-                        <li><a href="index-2.html"><i class="fa fa-home"></i> <span>Dashboard</span></a></li>
-                        <li><a href="messages.html"><span class="pull-right badge">5</span><i class="fa fa-envelope-o"></i> <span>Messages</span></a></li>
-                        <li class="parent"><a href="#"><i class="fa fa-suitcase"></i> <span>UI Elements</span></a>
+                        
+                        <li class="parent active"><a href="#"><i class="fa fa-tachometer"></i> <span>Administrateurs</span></a>
                             <ul class="children">
-                                <li><a href="alerts.html">Alerts &amp; Notifications</a></li>
-                                <li><a href="buttons.html">Buttons</a></li>
-                                <li><a href="extras.html">Extras</a></li>
-                                <li><a href="graphs.html">Graphs &amp; Charts</a></li>
-                                <li><a href="icons.html">Icons</a></li>
-                                <li><a href="modals.html">Modals</a></li>
-                                <li><a href="widgets.html">Panels &amp; Widgets</a></li>
-                                <li><a href="sliders.html">Sliders</a></li>                                
-                                <li><a href="tabs-accordions.html">Tabs &amp; Accordions</a></li>
-                                <li><a href="typography.html">Typography</a></li>
+                                <li><a href="#">Liste des administrateurs</a></li>
+                                <li class="active"><a href="#">Ajouter administrateur</a></li>
                             </ul>
                         </li>
-                        <li class="parent active"><a href="#"><i class="fa fa-edit"></i> <span>Forms</span></a>
+
+                        <li class="parent"><a href="#"><i class="fa fa-graduation-cap"></i> <span>Etudiants</span></a>
                             <ul class="children">
-                                <li><a href="code-editor.html">Code Editor</a></li>
-                                <li><a href="general-forms.html">General Forms</a></li>
-                                <li class="active"><a href="form-layouts.html">Layouts</a></li>
-                                <li><a href="wysiwyg.html">Text Editor</a></li>
-                                <li><a href="form-validation.html">Validation</a></li>
-                                <li><a href="form-wizards.html">Wizards</a></li>
+                                <li><a href="#">Liste des etudiants</a></li>
+                                <li><a href="#">Ajouter etudiant</a></li>
                             </ul>
                         </li>
-                        <li class="parent"><a href="#"><i class="fa fa-bars"></i> <span>Tables</span></a>
+
+                        <li class="parent"><a href="#"><i class="fa fa-suitcase"></i> <span>Salles</span></a>
                             <ul class="children">
-                                <li><a href="basic-tables.html">Basic Tables</a></li>
-                                <li><a href="data-tables.html">Data Tables</a></li>
+                                <li><a href="#">Liste des salles</a></li>
+                                <li><a href="#">Ajouter salle</a></li>
                             </ul>
                         </li>
-                        <li><a href="maps.html"><i class="fa fa-map-marker"></i> <span>Maps</span></a></li>
-                        <li class="parent"><a href="#"><i class="fa fa-file-text"></i> <span>Pages</span></a>
+						
+						<li class="parent"><a href="#"><i class="fa fa-calendar"></i> <span>Reservation</span></a>
                             <ul class="children">
-                                <li><a href="notfound.html">404 Page</a></li>
-                                <li><a href="blank.html">Blank Page</a></li>
-                                <li><a href="calendar.html">Calendar</a></li>
-                                <li><a href="invoice.html">Invoice</a></li>
-                                <li><a href="locked.html">Locked Screen</a></li>
-                                <li><a href="media-manager.html">Media Manager</a></li>
-                                <li><a href="people-directory.html">People Directory</a></li>
-                                <li><a href="profile.html">Profile</a></li>                                
-                                <li><a href="search-results.html">Search Results</a></li>
-                                <li><a href="signin.html">Sign In</a></li>
-                                <li><a href="signup.html">Sign Up</a></li>
+                                <li><a href="#">Reservation des espaces</a></li>
+                                <li><a href="ReservationMateriels.html">Reservation des materiels</a></li>
                             </ul>
                         </li>
                         
+                        <li><a href="messages.html"><span class="pull-right badge">13</span><i class="fa fa-bullhorn"></i> <span>Reclamations</span></a></li>
+
+
+                        <li><a href="messages.html"><span class="pull-right badge">20</span><i class="fa fa-file-text-o"></i> <span>Documents</span></a></li>
+
+						
+                        <li><a href="messages.html"><span class="pull-right badge">5</span><i class="fa fa-phone"></i> <span>Plaintes</span></a></li>
+                        
+
                     </ul>
                     
                 </div><!-- leftpanel -->
-                
+               
                 <div class="mainpanel">
                     <div class="pageheader">
                         <div class="media">
@@ -249,65 +237,86 @@
                             <div class="media-body">
                                 <ul class="breadcrumb">
                                     <li><a href="#"><i class="glyphicon glyphicon-home"></i></a></li>
-                                    <li><a href="#">Forms</a></li>
-                                    <li>Form Layouts</li>
+                                    <li><a href="#">Réservation</a></li>
+                                    <li>Modification</li>
                                 </ul>
-                                <h4>Form Layouts</h4>
+                                <h4>Modification</h4>
                             </div>
                         </div><!-- media -->
                     </div><!-- pageheader -->
                     
                     <div class="contentpanel">
-                              
-                        <div class="row">
-                            <div class="col-md-6"> 
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                       <h4 class="panel-title">Modifier l'enregistrement du produit XX</h4>
-                                        <p></p>
-                                    </div>
-                                    <div class="panel-body">
-                                        <div class="row">
-                                            <div class="col-sm-6">
-                                                <div class="form-group">
-                                                    <label class="control-label">Nom du matériel</label>
-                                                    <input type="text" name="nom_du_matériel" class="form-control" />
-                                                </div><!-- form-group -->
-                                            </div><!-- col-sm-6 -->
-                                            
-                                            <div class="col-sm-6">
-                                                <div class="form-group">
-                                                    <label class="control-label">Réservé par</label>
-                                                    <input type="text" name="reservé_par" class="form-control" />
-                                                </div><!-- form-group -->
-                                            </div><!-- col-sm-6 -->
-                                        </div><!-- row -->
-                                  
-                                        <div class="row">
-                                            <div class="col-sm-6">
-                                                <div class="form-group">
-                                                    <label class="control-label">Email</label>
-                                                    <input type="email" name="email" class="form-control" />
-                                                </div><!-- form-group -->
-                                            </div><!-- col-sm-6 -->
-                                            
-                                            <div class="col-sm-6">
-                                                <div class="form-group">
-                                                    <label class="control-label">Website</label>
-                                                    <input type="url" name="website" class="form-control" />
-                                                </div><!-- form-group -->
-                                            </div><!-- col-sm-6 -->
-                                        </div><!-- row -->
-                                    </div><!-- panel-body -->
-                                    <div class="panel-footer">
-                                        <button class="btn btn-primary">Submit Card</button>
-                                    </div><!-- panel-footer -->
-                                </div><!-- panel -->
-                                
-                            </div><!-- col-md-6 --> 
-                        </div><!-- row -->
-                    
-                    </div><!-- contentpanel -->
+                            <div class="col-md-6">
+                                <form class="form-horizontal">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title">Modifier l'enregistrement du produit <code>XX</code>.</h4>
+                                        </div>
+                                        <div class="panel-body">
+                                            <div class="form-group">
+                                                <label class="col-sm-4 control-label">Réference du matériel</label>
+                                                <div class="col-sm-8">
+                                                   <input value="KL_MN2010" id="readonlyinput" readonly="readonly" type="text" name="nom_du_matériel" class="form-control" />
+                                                </div>
+                                            </div><!-- form-group -->
+                                            <div class="form-group">
+                                                <label class="col-sm-4 control-label">Nom du matériel</label>
+                                                <div class="col-sm-8">
+												   <input type="text" name="nom_du_matériel" class="form-control" />
+                                                </div>
+                                            </div><!-- form-group -->
+                                        
+                                            <div class="form-group">
+                                                <label class="col-sm-4 control-label">Réservé par</label>
+                                                <div class="col-sm-8">
+<!--                                                     <input list="list_etudiants" type="text" name="reservé_par" class="form-control" />
+													<datalist id="list_etudiants">
+														<option value="Rida">
+														<option value="Soukaina">
+														<option value="Sara">
+														<option value="Ayoub">
+													</datalist> -->
+													<select id="select-templating" data-placeholder="Choose One" class="width300">
+														<option value="">Choose One</option>
+														<option rel="fa-user" value="facebook">Rida</option>
+														<option rel="fa-user" value="twitter">Sara</option>
+														<option rel="fa-user" value="youtube">Soukaina</option>
+														<option rel="fa-user" value="pinterest">Meryem</option>
+														<option rel="fa-user" value="linkedin">Amine</option>
+													</select>
+                                                </div>
+                                            </div><!-- form-group -->
+
+											<div class="form-group"> <!--date debut -->
+                                                <label class="col-sm-4 control-label">Date début</label>
+                                                <div class="input-group">
+													<input type="text" class="form-control" placeholder="mm/dd/yyyy" id="datepicker">
+													<span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+												</div><!-- input-group -->
+                                            </div><!-- form-group -->		
+											<div class="form-group"> <!--date fin -->
+                                                <label class="col-sm-4 control-label">Date fin</label>
+                                                <div class="input-group">
+													<input type="text" class="form-control" placeholder="mm/dd/yyyy" id="datepicker2">
+													<span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+												</div><!-- input-group -->
+                                            </div><!-- form-group -->												
+											<div class="form-group"> <!--disponibilite -->
+                                                <label class="col-sm-4 control-label">Disponibilité</label>
+                                                <div class="col-sm-8">
+                                                    <div class="col-sm-8 control-label">
+                                                    <div style="height: 20px; width: 50px;" class="toggle toggle-primary"><div class="toggle-slide active"><div style="width: 80px; margin-left: 0px;" class="toggle-inner"><div style="height: 20px; width: 40px; text-align: center; text-indent: -10px; line-height: 20px;" class="toggle-on active">ON</div><div style="height: 20px; width: 20px; margin-left: -10px;" class="toggle-blob"></div><div style="height: 20px; width: 40px; margin-left: -10px; text-align: center; text-indent: 10px; line-height: 20px;" class="toggle-off">OFF</div></div></div></div>
+													</div>
+                                                </div>
+                                            </div><!-- form-group -->
+                                        </div><!-- panel-body -->
+                                        <div class="panel-footer">
+                                            <button class="btn btn-primary mr5">Submit</button>
+                                            <button type="reset" class="btn btn-default">Reset</button>
+                                        </div><!-- panel-footer -->
+                                    </div><!-- panel-default -->
+                                </form>
+                            </div><!-- col-md-6 -->
                 </div>
             </div><!-- mainwrapper -->
         </section>
@@ -321,10 +330,51 @@
         <script src="js/pace.min.js"></script>
         <script src="js/retina.min.js"></script>
         <script src="js/jquery.cookies.js"></script>
+		
+		<script src="js/custom.js"></script>
 
-        <script src="js/custom.js"></script>
+		<!--ADD-->
+        <script src="js/toggles.min.js"></script>
+		<script src="js/select2.min.js"></script>
 
+        
+        <script>
+            jQuery(document).ready(function() {
+			    jQuery('#select-search-hide').select2({
+                    minimumResultsForSearch: -1
+                });
+
+                // Form Toggles
+                jQuery('.toggle').toggles({on: true});    
+
+			    jQuery("#select-basic, #select-multi").select2();
+                jQuery('#select-search-hide').select2({
+                    minimumResultsForSearch: -1
+                });
+                
+                function format(item) {
+                    return '<i class="fa ' + ((item.element[0].getAttribute('rel') === undefined)?"":item.element[0].getAttribute('rel') ) + ' mr10"></i>' + item.text;
+                }
+                
+                // This will empty first option in select to enable placeholder
+                jQuery('select option:first-child').text('');
+                
+                jQuery("#select-templating").select2({
+                    formatResult: format,
+                    formatSelection: format,
+                    escapeMarkup: function(m) { return m; }
+                });
+				
+				// Date Picker
+                jQuery('#datepicker').datepicker();
+                
+				
+				jQuery('#datepicker2').datepicker();
+
+				
+            });
+        </script>
     </body>
 
-<!-- Mirrored from themepixels.com/demo/webpage/chain/form-layouts.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 09 May 2015 14:11:25 GMT -->
+
 </html>

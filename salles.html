@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
     
-<!-- Mirrored from themepixels.com/demo/webpage/chain/form-layouts.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 09 May 2015 14:11:25 GMT -->
+<!-- Mirrored from themepixels.com/demo/webpage/chain/data-tables.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 09 May 2015 14:11:44 GMT -->
 <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
         <meta name="description" content="">
         <meta name="author" content="">
 
-        <title>Ajouter Etudiant</title>
+        <title>Liste des salles</title>
 
         <link href="css/style.default.css" rel="stylesheet">
+        <link href="css/select2.css" rel="stylesheet" />
+        <link href="css/style.datatables.css" rel="stylesheet">
+        <link href="cdn.datatables.net/responsive/1.0.1/css/dataTables.responsive.css" rel="stylesheet">
 
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
@@ -92,7 +95,7 @@
         </header>
         <br>
         <br>
-
+        
         <section>
             <div class="mainwrapper">
                 <div class="leftpanel">
@@ -116,17 +119,17 @@
                             </ul>
                         </li>
 
-                        <li class="parent active"><a href="#"><i class="fa fa-graduation-cap"></i> <span>Etudiants</span></a>
+                        <li class="parent"><a href="#"><i class="fa fa-graduation-cap"></i> <span>Etudiants</span></a>
                             <ul class="children">
-                                <li><a href="etudiants.html">Liste des etudiants</a></li>
-                                <li class="active"><a href="#">Ajouter etudiant</a></li>
+                                <li><a href="#">Liste des etudiants</a></li>
+                                <li><a href="ajouter_etudiant.html">Ajouter etudiant</a></li>
                             </ul>
                         </li>
 
-                        <li class="parent"><a href="#"><i class="fa fa-suitcase"></i> <span>Salles</span></a>
+                        <li class="parent active"><a href="#"><i class="fa fa-suitcase"></i> <span>Salles</span></a>
                             <ul class="children">
-                                <li><a href="salles.html">Liste des salles</a></li>
-                                <li><a href="ajouter_salles.html">Ajouter salle</a></li>
+                                <li class="active"><a href="#">Liste des salles</a></li>
+                                <li><a href="ajouter_salle.html">Ajouter salle</a></li>
                             </ul>
                         </li>
                         
@@ -146,124 +149,139 @@
                     </ul>
                     
                 </div><!-- leftpanel -->
+                
                 <div class="mainpanel">
                     <div class="pageheader">
                         <div class="media">
                             <div class="pageicon pull-left">
-                                <i class="fa fa-pencil"></i>
+                                <i class="fa fa-th-list"></i>
                             </div>
                             <div class="media-body">
                                 <ul class="breadcrumb">
                                     <li><a href="#"><i class="glyphicon glyphicon-home"></i></a></li>
-                                    <li><a href="#">Forms</a></li>
-                                    <li>Ajouter Etudiant</li>
+                                    <li><a href="#">Tables</a></li>
+                                    <li>Data Tables</li>
                                 </ul>
-                                <h4>Ajouter Etudiant</h4>
+                                <h4>Data Tables</h4>
                             </div>
                         </div><!-- media -->
                     </div><!-- pageheader -->
                     
                     <div class="contentpanel">
-                        
-                        
-                        
-                        <div class="row">
+                       
+                        <div class="panel panel-primary-head">
                             
-                            <div class="col-md-12"> 
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <div class="panel-btns">
-                                            <a href="#" class="panel-minimize tooltips" data-toggle="tooltip" title="Minimize Panel"><i class="fa fa-minus"></i></a>
-                                            <a href="#" class="panel-close tooltips" data-toggle="tooltip" title="Close Panel"><i class="fa fa-times"></i></a>
-                                        </div><!-- panel-btns -->
-                                        <h4 class="panel-title">Block Styled Form</h4>
-                                        <p>This is an example of form with block styled label.</p>
-                                    </div>
-                                    <div class="panel-body">
-                                        <div class="row">
-                                            <div class="col-sm-6">
-                                                <div class="form-group">
-                                                    <label class="control-label">Prenom</label>
-                                                    <input type="text" name="firstname" class="form-control" />
-                                                </div><!-- form-group -->
-                                            </div><!-- col-sm-6 -->
-                                            
-                                            <div class="col-sm-6">
-                                                <div class="form-group">
-                                                    <label class="control-label">Nom</label>
-                                                    <input type="text" name="lastname" class="form-control" />
-                                                </div><!-- form-group -->
-                                            </div><!-- col-sm-6 -->
-                                        </div><!-- row -->
-                                  
-                                        <div class="row">
-                                            <div class="col-sm-6">
-                                                <div class="form-group">
-                                                    <label class="control-label">Email</label>
-                                                    <input type="email" name="email" class="form-control" />
-                                                </div><!-- form-group -->
-                                            </div><!-- col-sm-6 -->
-                                            
-                                            <div class="col-sm-6">
-                                                <div class="form-group">
-                                                    <label class="control-label">Telephone</label>
-                                                    <input type="url" name="tele" class="form-control" />
-                                                </div><!-- form-group -->
-                                            </div><!-- col-sm-6 -->
-                                        </div><!-- row -->
+                            
+                            <table id="basicTable" class="table table-striped table-bordered responsive">
+                                <thead class="">
+                                    <tr>
+                                        <th>Numéro</th>
+                                        <th>Departement</th>
+                                        <th>Nombre de place</th>
+                                    </tr>
+                                </thead>
+                         
+                                <tbody>
+                                    <tr>
+                                        <td>A7</td>
+                                        <td>Info</td>
+                                        <td>32</td>
+                                    </tr>
 
-                                        <div class="row">
-                                            <div class="col-sm-6">
-                                                <div class="form-group">
-                                                    <label class="control-label">CNE</label>
-                                                    <input type="email" name="cne" class="form-control" />
-                                                </div><!-- form-group -->
-                                            </div><!-- col-sm-6 -->
-                                            
-                                            <div class="col-sm-6">
-                                                <div class="form-group">
-                                                    <label class="control-label">CIN</label>
-                                                    <input type="url" name="cin" class="form-control" />
-                                                </div><!-- form-group -->
-                                            </div><!-- col-sm-6 -->
+                                    <tr>
+                                        <td>A7</td>
+                                        <td>Info</td>
+                                        <td>32</td>
+                                    </tr>
 
-                                            <div class="col-sm-12">
-                                                <div class="form-group">
-                                                    <label class="control-label">Adresse</label>
-                                                    <textarea class="form-control" rows="5" name="adresse"></textarea>
-                                                </div><!-- form-group -->
-                                            </div><!-- col-sm-12 -->
+                                    <tr>
+                                        <td>A7</td>
+                                        <td>Info</td>
+                                        <td>32</td>
+                                    </tr>
 
-                                            
-                                        </div><!-- row -->
-                                    </div><!-- panel-body -->
-                                    <div class="panel-footer">
-                                        <button class="btn btn-primary">Ajouter</button>
-                                        <button type="reset" class="btn btn-default">Cancel</button>
-                                    </div><!-- panel-footer -->
-                                </div><!-- panel -->
-                                
-                            </div><!-- col-md-6 --> 
-                        </div><!-- row -->
-                    
+
+                                    <tr>
+                                        <td>A7</td>
+                                        <td>Info</td>
+                                        <td>32</td>
+                                    </tr>
+
+
+                                    <tr>
+                                        <td>A7</td>
+                                        <td>Info</td>
+                                        <td>32</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>A7</td>
+                                        <td>Info</td>
+                                        <td>32</td>
+                                    </tr>
+
+
+                                    <tr>
+                                        <td>A7</td>
+                                        <td>Info</td>
+                                        <td>32</td>
+                                    </tr>
+
+
+                                    <tr>
+                                        <td>A7</td>
+                                        <td>Info</td>
+                                        <td>32</td>
+                                    </tr>
+
+
+                                    <tr>
+                                        <td>A7</td>
+                                        <td>Info</td>
+                                        <td>32</td>
+                                    </tr>
+
+                                    
+                                </tbody>
+                            </table>
+                        </div><!-- panel -->
+                        
+                        <br />
+                        
+                       
+                        
                     </div><!-- contentpanel -->
-                </div>
+                </div><!-- mainpanel -->
             </div><!-- mainwrapper -->
         </section>
 
-
         <script src="js/jquery-1.11.1.min.js"></script>
         <script src="js/jquery-migrate-1.2.1.min.js"></script>
-        <script src="js/jquery-ui-1.10.3.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/modernizr.min.js"></script>
         <script src="js/pace.min.js"></script>
         <script src="js/retina.min.js"></script>
         <script src="js/jquery.cookies.js"></script>
+        
+        <script src="js/jquery.dataTables.min.js"></script>
+        <script src="cdn.datatables.net/plug-ins/725b2a2115b/integration/bootstrap/3/dataTables.bootstrap.js"></script>
+        <script src="cdn.datatables.net/responsive/1.0.1/js/dataTables.responsive.js"></script>
+        <script src="js/select2.min.js"></script>
 
         <script src="js/custom.js"></script>
+        <script>
+            jQuery(document).ready(function(){
+                
+                jQuery('#basicTable').DataTable({
+                    responsive: true
+                });
+                
+            });
+            
+          
+        </script>
 
     </body>
 
-<!-- Mirrored from themepixels.com/demo/webpage/chain/form-layouts.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 09 May 2015 14:11:25 GMT -->
+
 </html>

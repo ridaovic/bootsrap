@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
     
-<!-- Mirrored from themepixels.com/demo/webpage/chain/data-tables.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 09 May 2015 14:11:44 GMT -->
+
 <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
         <meta name="description" content="">
         <meta name="author" content="">
 
-        <title>Liste des etudiants</title>
+        <title>Liste des réservations</title>
 
         <link href="css/style.default.css" rel="stylesheet">
         <link href="css/select2.css" rel="stylesheet" />
@@ -112,38 +112,41 @@
                     <h5 class="leftpanel-title">Navigation</h5>
                     <ul class="nav nav-pills nav-stacked">
                         
-                        <li class="parent"><a href="#"><i class="fa fa-tachometer"></i> <span>Administrateurs</span></a>
+                        <li class="parent active"><a href="#"><i class="fa fa-tachometer"></i> <span>Administrateurs</span></a>
                             <ul class="children">
-                                <li><a href="administrateurs.html">Liste des administrateurs</a></li>
-                                <li class="active"><a href="ajouter_administrateur.html">Ajouter administrateur</a></li>
+                                <li><a href="#">Liste des administrateurs</a></li>
+                                <li class="active"><a href="#">Ajouter administrateur</a></li>
                             </ul>
                         </li>
 
-                        <li class="parent active"><a href="#"><i class="fa fa-graduation-cap"></i> <span>Etudiants</span></a>
+                        <li class="parent"><a href="#"><i class="fa fa-graduation-cap"></i> <span>Etudiants</span></a>
                             <ul class="children">
-                                <li class="active"><a href="#">Liste des etudiants</a></li>
-                                <li><a href="ajouter_etudiant.html">Ajouter etudiant</a></li>
+                                <li><a href="#">Liste des etudiants</a></li>
+                                <li><a href="#">Ajouter etudiant</a></li>
                             </ul>
                         </li>
 
                         <li class="parent"><a href="#"><i class="fa fa-suitcase"></i> <span>Salles</span></a>
                             <ul class="children">
-                                <li><a href="salles.html">Liste des salles</a></li>
-                                <li><a href="ajouter_salles.html">Ajouter salle</a></li>
+                                <li><a href="#">Liste des salles</a></li>
+                                <li><a href="#">Ajouter salle</a></li>
+                            </ul>
+                        </li>
+						
+						<li class="parent"><a href="#"><i class="fa fa-calendar"></i> <span>Reservation</span></a>
+                            <ul class="children">
+                                <li><a href="#">Reservation des espaces</a></li>
+                                <li><a href="ReservationMateriels.html">Reservation des materiels</a></li>
                             </ul>
                         </li>
                         
-                        
-                        <li><a href="reservations.html"><span class="pull-right badge">5</span><i class="fa fa-calendar"></i> <span>Reservation</span></a></li>
+                        <li><a href="messages.html"><span class="pull-right badge">13</span><i class="fa fa-bullhorn"></i> <span>Reclamations</span></a></li>
 
 
-                        <li><a href="reclamations.html"><span class="pull-right badge">13</span><i class="fa fa-bullhorn"></i> <span>Reclamations</span></a></li>
+                        <li><a href="messages.html"><span class="pull-right badge">20</span><i class="fa fa-file-text-o"></i> <span>Documents</span></a></li>
 
-
-                        <li><a href="documents.html"><span class="pull-right badge">20</span><i class="fa fa-file-text-o"></i> <span>Documents</span></a></li>
-
-
-                        <li><a href="plaintes.html"><span class="pull-right badge">5</span><i class="fa fa-phone"></i> <span>Plaintes</span></a></li>
+						
+                        <li><a href="messages.html"><span class="pull-right badge">5</span><i class="fa fa-phone"></i> <span>Plaintes</span></a></li>
                         
 
                     </ul>
@@ -154,15 +157,15 @@
                     <div class="pageheader">
                         <div class="media">
                             <div class="pageicon pull-left">
-                                <i class="fa fa-th-list"></i>
+                                <i class="fa fa-calendar"></i>
                             </div>
                             <div class="media-body">
                                 <ul class="breadcrumb">
                                     <li><a href="#"><i class="glyphicon glyphicon-home"></i></a></li>
-                                    <li><a href="#">Tables</a></li>
-                                    <li>Data Tables</li>
+                                    <li><a href="#">Réservations</a></li>
+                                    <li>Les réservations</li>
                                 </ul>
-                                <h4>Data Tables</h4>
+                                <h4>Les réservations</h4>
                             </div>
                         </div><!-- media -->
                     </div><!-- pageheader -->
@@ -181,7 +184,7 @@
                                         <th>Adresse</th>
                                         <th>Date de naissance</th>
                                         <th>Email</th>
-                                        <th>Status</th>
+                                        <th>Fonction</th>
                                     </tr>
                                 </thead>
                          
@@ -193,7 +196,7 @@
                                         <td>hey el falah</td>
                                         <td>1992/01/31</td>
                                         <td>rida.rhanim@gmail.com</td>
-                                        <td><i class="fa fa-thumbs-o-up blue"></i></td>
+                                        <td>?</td>
                                     </tr>
 
                                     <tr>
@@ -203,7 +206,7 @@
                                         <td>hey el falah</td>
                                         <td>1992/01/31</td>
                                         <td>rida.rhanim@gmail.com</td>
-                                        <td><i class="fa fa-thumbs-o-down rouge"></i></td>
+                                        <td>?</td>
                                     </tr>
 
                                     <tr>
@@ -213,7 +216,7 @@
                                         <td>hey el falah</td>
                                         <td>1992/01/31</td>
                                         <td>rida.rhanim@gmail.com</td>
-                                        <td><i class="fa fa-thumbs-o-down rouge"></i></td>
+                                        <td>?</td>
                                     </tr>
 
 
@@ -224,7 +227,7 @@
                                         <td>hey el falah</td>
                                         <td>1992/01/31</td>
                                         <td>rida.rhanim@gmail.com</td>
-                                        <td><i class="fa fa-thumbs-o-down rouge"></i></td>
+                                        <td>?</td>
                                     </tr>
 
                                     <tr>
@@ -234,7 +237,7 @@
                                         <td>hey el falah</td>
                                         <td>1992/01/31</td>
                                         <td>rida.rhanim@gmail.com</td>
-                                        <td><i class="fa fa-thumbs-o-up blue"></i></span></td>
+                                        <td>?</span></td>
                                     </tr>
                                     
                                     <tr>
@@ -244,7 +247,7 @@
                                         <td>hey el falah</td>
                                         <td>1992/01/31</td>
                                         <td>rida.rhanim@gmail.com</td>
-                                        <td><i class="fa fa-thumbs-o-down blue"></i></td>
+                                        <td>?</td>
                                     </tr>
 
                                     <tr>
@@ -254,7 +257,7 @@
                                         <td>hey el falah</td>
                                         <td>1992/01/31</td>
                                         <td>rida.rhanim@gmail.com</td>
-                                        <td><i class="fa fa-thumbs-o-down rouge"></i></td>
+                                        <td>?</td>
                                     </tr>
 
                                     <tr>
@@ -264,7 +267,7 @@
                                         <td>hey el falah</td>
                                         <td>1992/01/31</td>
                                         <td>rida.rhanim@gmail.com</td>
-                                        <td><i class="fa fa-thumbs-o-up blue"></i></td>
+                                        <td>?</td>
                                     </tr>
 
                                     <tr>
@@ -274,7 +277,7 @@
                                         <td>hey el falah</td>
                                         <td>1992/01/31</td>
                                         <td>rida.rhanim@gmail.com</td>
-                                        <td><i class="fa fa-thumbs-o-up blue"></i></td>
+                                        <td>?</td>
                                     </tr>
 
                                     <tr>
@@ -284,7 +287,7 @@
                                         <td>hey el falah</td>
                                         <td>1992/01/31</td>
                                         <td>rida.rhanim@gmail.com</td>
-                                        <td><i class="fa fa-thumbs-o-up blue"></i></td>
+                                        <td>?</td>
                                     </tr>
 
                                     <tr>
@@ -294,7 +297,7 @@
                                         <td>hey el falah</td>
                                         <td>1992/01/31</td>
                                         <td>rida.rhanim@gmail.com</td>
-                                        <td><i class="fa fa-thumbs-o-up blue"></i></td>
+                                        <td>?</td>
                                     </tr>
                                 </tbody>
                             </table>

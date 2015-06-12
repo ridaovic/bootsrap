@@ -306,6 +306,136 @@ jQuery(document).ready(function(){
     });
     
     
+   
+
+ /*****CHART 4 *****/
+    
+    var impressions =       [[0, 0], [1, 5], [2,2], [3, 7], [4, 4], [5, 5], [6, 0]];
+    var uniqueimpressions = [[0, 0], [1, 2], [2,1], [3, 6], [4, 3], [5, 4], [6,0]];
+	
+    var plot = jQuery.plot(jQuery("#basicflot4"),
+	[{
+	    data: impressions,
+	    label: "Impressions",
+	    color: "#905dd1"
+	},
+        {
+	    data: uniqueimpressions,
+	    label: "Unique Impressions",
+	    color: "#41868f"
+        }
+	],
+	{
+	    series: {
+		lines: {
+		    show: false
+		},
+		splines: {
+		    show: true,
+		    tension: 0.4,
+		    lineWidth: 1,
+		    fill: 0.4
+		},
+		shadowSize: 0
+	    },
+	    points: {
+		show: true
+	    },
+	    legend: {
+		container: '#basicFlotLegend4',
+                noColumns: 0
+	    },
+	    grid: {
+		hoverable: true,
+		clickable: true,
+		borderColor: '#ddd',
+		borderWidth: 0,
+		labelMargin: 5,
+		backgroundColor: '#fff'
+	    },
+	    yaxis: {
+		min: 0,
+		max: 15,
+		color: '#eee'
+	    },
+	    xaxis: {
+		color: '#eee'
+	    }
+	});
+		
+	var previousPoint = null;
+	jQuery("#basicflot4").bind("plothover", function (event, pos, item) {
+	jQuery("#x").text(pos.x.toFixed(2));
+	jQuery("#y").text(pos.y.toFixed(2));
+			
+	if(item) {
+	    if (previousPoint != item.dataIndex) {
+		previousPoint = item.dataIndex;
+						
+		jQuery("#tooltip").remove();
+		var x = item.datapoint[0].toFixed(2),
+		y = item.datapoint[1].toFixed(2);
+	 			
+		showTooltip(item.pageX, item.pageY,
+		item.series.label + " of " + x + " = " + y);
+	    }
+			
+	} else {
+	    jQuery("#tooltip").remove();
+	    previousPoint = null;            
+	}
+		
+    });
+		
+    jQuery("#basicflot4").bind("plotclick", function (event, pos, item) {
+	if (item) {
+	    plot.highlight(item.series, item.datapoint);
+	}
+    });
+    
+    
+    jQuery('#sparkline').sparkline([4,3,3,1,4,3,2,2,3,10,9,6], {
+	type: 'bar', 
+        height:'30px',
+        barColor: '#41868f'
+    });
+    
+    jQuery('#sparkline2').sparkline([9,8,8,6,9,10,6,5,6,3,4,2], {
+	type: 'bar', 
+	height:'30px',
+        barColor: '#999'
+    });
+    
+    jQuery('#sparkline3').sparkline([4,3,3,1,4,3,2,2,3,10,9,6], {
+	type: 'bar', 
+        height:'30px',
+        barColor: '#41868f'
+    });
+    
+    jQuery('#sparkline4').sparkline([9,8,8,6,9,10,6,5,6,3,4,2], {
+	type: 'bar', 
+	height:'30px',
+        barColor: '#999'
+    });
+    
+    jQuery('#sparkline5').sparkline([4,3,3,1,4,3,2,2,3,10,9,6], {
+	type: 'bar', 
+        height:'30px',
+        barColor: '#41868f'
+    });
+    
+    jQuery('#sparkline6').sparkline([9,8,8,6,9,10,6,5,6,3,4,2], {
+	type: 'bar', 
+	height:'30px',
+        barColor: '#999'
+    });
+   
+
+
+
+
+
+
     /***** BAR CHART *****/
     
     var m3 = new Morris.Bar({

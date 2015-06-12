@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-    
-<!-- Mirrored from themepixels.com/demo/webpage/chain/data-tables.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 09 May 2015 14:11:44 GMT -->
+
+
 <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
         <meta name="description" content="">
         <meta name="author" content="">
 
-        <title>Liste des etudiants</title>
+        <title>Liste des reclamations</title>
 
         <link href="css/style.default.css" rel="stylesheet">
         <link href="css/select2.css" rel="stylesheet" />
@@ -115,13 +115,13 @@
                         <li class="parent"><a href="#"><i class="fa fa-tachometer"></i> <span>Administrateurs</span></a>
                             <ul class="children">
                                 <li><a href="administrateurs.html">Liste des administrateurs</a></li>
-                                <li class="active"><a href="ajouter_administrateur.html">Ajouter administrateur</a></li>
+                                <li><a href="ajouter_administrateur.html">Ajouter administrateur</a></li>
                             </ul>
                         </li>
 
-                        <li class="parent active"><a href="#"><i class="fa fa-graduation-cap"></i> <span>Etudiants</span></a>
+                        <li class="parent"><a href="#"><i class="fa fa-graduation-cap"></i> <span>Etudiants</span></a>
                             <ul class="children">
-                                <li class="active"><a href="#">Liste des etudiants</a></li>
+                                <li><a href="etudiants.html">Liste des etudiants</a></li>
                                 <li><a href="ajouter_etudiant.html">Ajouter etudiant</a></li>
                             </ul>
                         </li>
@@ -137,7 +137,7 @@
                         <li><a href="reservations.html"><span class="pull-right badge">5</span><i class="fa fa-calendar"></i> <span>Reservation</span></a></li>
 
 
-                        <li><a href="reclamations.html"><span class="pull-right badge">13</span><i class="fa fa-bullhorn"></i> <span>Reclamations</span></a></li>
+                        <li class="active"><a href="#"><span class="pull-right badge">13</span><i class="fa fa-bullhorn"></i> <span>Reclamations</span></a></li>
 
 
                         <li><a href="documents.html"><span class="pull-right badge">20</span><i class="fa fa-file-text-o"></i> <span>Documents</span></a></li>
@@ -176,12 +176,12 @@
                                 <thead class="">
                                     <tr>
                                         <th>Identifiant</th>
-                                        <th>Nom</th>
-                                        <th>Prenom</th>
-                                        <th>Adresse</th>
-                                        <th>Date de naissance</th>
-                                        <th>Email</th>
+                                        <th>Édité par</th>
+                                        <th>Type</th>
+                                        <th>Sujet</th>
+                                        <th>Date reclamation</th>
                                         <th>Status</th>
+                                        <th>Action</th>
                                     </tr>
                                 </thead>
                          
@@ -189,113 +189,135 @@
                                     <tr>
                                         <td># 1</td>
                                         <td>Rhanim</td>
-                                        <td>Rida</td>
-                                        <td>hey el falah</td>
-                                        <td>1992/01/31</td>
-                                        <td>rida.rhanim@gmail.com</td>
+                                        <td>Objet trouvé</td>
+                                        <td>smartphone</td>
+                                        <td>09/02/2015 16:00</td>
                                         <td><i class="fa fa-thumbs-o-up blue"></i></td>
+                                        <td><a href="modif_reservationMateriels.html"> <i style="width: 100%;" class="fa fa-pencil-square-o"></i> </a></td>
                                     </tr>
+
 
                                     <tr>
                                         <td># 1</td>
                                         <td>Rhanim</td>
-                                        <td>Rida</td>
-                                        <td>hey el falah</td>
-                                        <td>1992/01/31</td>
-                                        <td>rida.rhanim@gmail.com</td>
+                                        <td>Objet trouvé</td>
+                                        <td>smartphone</td>
+                                        <td>09/02/2015 16:00</td>
                                         <td><i class="fa fa-thumbs-o-down rouge"></i></td>
+                                        <td><a href="modif_reservationMateriels.html"> <i style="width: 100%;" class="fa fa-pencil-square-o"></i> </a></td>
                                     </tr>
+
 
                                     <tr>
                                         <td># 1</td>
                                         <td>Rhanim</td>
-                                        <td>Rida</td>
-                                        <td>hey el falah</td>
-                                        <td>1992/01/31</td>
-                                        <td>rida.rhanim@gmail.com</td>
+                                        <td>Objet trouvé</td>
+                                        <td>smartphone</td>
+                                        <td>09/02/2015 16:00</td>
+                                        <td><i class="fa fa-thumbs-o-up blue"></i></td>
+                                        <td><a href="modif_reservationMateriels.html"> <i style="width: 100%;" class="fa fa-pencil-square-o"></i> </a></td>
+                                    </tr>
+
+
+                                    <tr>
+                                        <td># 1</td>
+                                        <td>Rhanim</td>
+                                        <td>Objet trouvé</td>
+                                        <td>smartphone</td>
+                                        <td>09/02/2015 16:00</td>
+                                        <td><i class="fa fa-thumbs-o-up blue"></i></td>
+                                        <td><a href="modif_reservationMateriels.html"> <i style="width: 100%;" class="fa fa-pencil-square-o"></i> </a></td>
+                                    </tr>
+
+
+                                    <tr>
+                                        <td># 1</td>
+                                        <td>Rhanim</td>
+                                        <td>Objet trouvé</td>
+                                        <td>smartphone</td>
+                                        <td>09/02/2015 16:00</td>
+                                        <td><i class="fa fa-thumbs-o-up blue"></i></td>
+                                        <td><a href="modif_reservationMateriels.html"> <i style="width: 100%;" class="fa fa-pencil-square-o"></i> </a></td>
+                                    </tr>
+
+
+                                    <tr>
+                                        <td># 1</td>
+                                        <td>Rhanim</td>
+                                        <td>Objet trouvé</td>
+                                        <td>smartphone</td>
+                                        <td>09/02/2015 16:00</td>
+                                        <td><i class="fa fa-thumbs-o-up blue"></i></td>
+                                        <td><a href="modif_reservationMateriels.html"> <i style="width: 100%;" class="fa fa-pencil-square-o"></i> </a></td>
+                                    </tr>
+
+
+                                    <tr>
+                                        <td># 1</td>
+                                        <td>Rhanim</td>
+                                        <td>Objet trouvé</td>
+                                        <td>smartphone</td>
+                                        <td>09/02/2015 16:00</td>
+                                        <td><i class="fa fa-thumbs-o-up blue"></i></td>
+                                        <td><a href="modif_reservationMateriels.html"> <i style="width: 100%;" class="fa fa-pencil-square-o"></i> </a></td>
+                                    </tr>
+
+
+                                    <tr>
+                                        <td># 1</td>
+                                        <td>Rhanim</td>
+                                        <td>Objet trouvé</td>
+                                        <td>smartphone</td>
+                                        <td>09/02/2015 16:00</td>
+                                        <td><i class="fa fa-thumbs-o-up blue"></i></td>
+                                        <td><a href="modif_reservationMateriels.html"> <i style="width: 100%;" class="fa fa-pencil-square-o"></i> </a></td>
+                                    </tr>
+
+
+                                    <tr>
+                                        <td># 1</td>
+                                        <td>Rhanim</td>
+                                        <td>Objet trouvé</td>
+                                        <td>smartphone</td>
+                                        <td>09/02/2015 16:00</td>
+                                        <td><i class="fa fa-thumbs-o-up blue"></i></td>
+                                        <td><a href="modif_reservationMateriels.html"> <i style="width: 100%;" class="fa fa-pencil-square-o"></i> </a></td>
+                                    </tr>
+
+
+                                    <tr>
+                                        <td># 1</td>
+                                        <td>Rhanim</td>
+                                        <td>Objet trouvé</td>
+                                        <td>smartphone</td>
+                                        <td>09/02/2015 16:00</td>
+                                        <td><i class="fa fa-thumbs-o-up blue"></i></td>
+                                        <td><a href="modif_reservationMateriels.html"> <i style="width: 100%;" class="fa fa-pencil-square-o"></i> </a></td>
+                                    </tr>
+
+
+                                    <tr>
+                                        <td># 1</td>
+                                        <td>Rhanim</td>
+                                        <td>Objet trouvé</td>
+                                        <td>smartphone</td>
+                                        <td>09/02/2015 16:00</td>
                                         <td><i class="fa fa-thumbs-o-down rouge"></i></td>
+                                        <td><a href="modif_reservationMateriels.html"> <i style="width: 100%;" class="fa fa-pencil-square-o"></i> </a></td>
                                     </tr>
 
 
                                     <tr>
                                         <td># 1</td>
                                         <td>Rhanim</td>
-                                        <td>Rida</td>
-                                        <td>hey el falah</td>
-                                        <td>1992/01/31</td>
-                                        <td>rida.rhanim@gmail.com</td>
-                                        <td><i class="fa fa-thumbs-o-down rouge"></i></td>
-                                    </tr>
-
-                                    <tr>
-                                        <td># 32</td>
-                                        <td>Rhanim</td>
-                                        <td>Rida</td>
-                                        <td>hey el falah</td>
-                                        <td>1992/01/31</td>
-                                        <td>rida.rhanim@gmail.com</td>
-                                        <td><i class="fa fa-thumbs-o-up blue"></i></span></td>
-                                    </tr>
-                                    
-                                    <tr>
-                                        <td># 1</td>
-                                        <td>Rhanim</td>
-                                        <td>Rida</td>
-                                        <td>hey el falah</td>
-                                        <td>1992/01/31</td>
-                                        <td>rida.rhanim@gmail.com</td>
-                                        <td><i class="fa fa-thumbs-o-down blue"></i></td>
-                                    </tr>
-
-                                    <tr>
-                                        <td># 32</td>
-                                        <td>Rhanim</td>
-                                        <td>Rida</td>
-                                        <td>hey el falah</td>
-                                        <td>1992/01/31</td>
-                                        <td>rida.rhanim@gmail.com</td>
-                                        <td><i class="fa fa-thumbs-o-down rouge"></i></td>
-                                    </tr>
-
-                                    <tr>
-                                        <td># 1</td>
-                                        <td>Rhanim</td>
-                                        <td>Rida</td>
-                                        <td>hey el falah</td>
-                                        <td>1992/01/31</td>
-                                        <td>rida.rhanim@gmail.com</td>
+                                        <td>Objet trouvé</td>
+                                        <td>smartphone</td>
+                                        <td>09/02/2015 16:00</td>
                                         <td><i class="fa fa-thumbs-o-up blue"></i></td>
+                                        <td><a href="modif_reservationMateriels.html"> <i style="width: 100%;" class="fa fa-pencil-square-o"></i> </a></td>
                                     </tr>
 
-                                    <tr>
-                                        <td># 32</td>
-                                        <td>Rhanim</td>
-                                        <td>Rida</td>
-                                        <td>hey el falah</td>
-                                        <td>1992/01/31</td>
-                                        <td>rida.rhanim@gmail.com</td>
-                                        <td><i class="fa fa-thumbs-o-up blue"></i></td>
-                                    </tr>
 
-                                    <tr>
-                                        <td># 1</td>
-                                        <td>Rhanim</td>
-                                        <td>Rida</td>
-                                        <td>hey el falah</td>
-                                        <td>1992/01/31</td>
-                                        <td>rida.rhanim@gmail.com</td>
-                                        <td><i class="fa fa-thumbs-o-up blue"></i></td>
-                                    </tr>
-
-                                    <tr>
-                                        <td># 32</td>
-                                        <td>Rhanim</td>
-                                        <td>Rida</td>
-                                        <td>hey el falah</td>
-                                        <td>1992/01/31</td>
-                                        <td>rida.rhanim@gmail.com</td>
-                                        <td><i class="fa fa-thumbs-o-up blue"></i></td>
-                                    </tr>
                                 </tbody>
                             </table>
                         </div><!-- panel -->

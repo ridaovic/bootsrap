@@ -8,9 +8,10 @@
         <meta name="description" content="">
         <meta name="author" content="">
 
-        <title>Ajouter Etudiant</title>
+        <title>Ajouter Salle</title>
 
         <link href="css/style.default.css" rel="stylesheet">
+        <link href="css/select2.css" rel="stylesheet" />
 
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
@@ -116,17 +117,17 @@
                             </ul>
                         </li>
 
-                        <li class="parent active"><a href="#"><i class="fa fa-graduation-cap"></i> <span>Etudiants</span></a>
+                        <li class="parent"><a href="#"><i class="fa fa-graduation-cap"></i> <span>Etudiants</span></a>
                             <ul class="children">
                                 <li><a href="etudiants.html">Liste des etudiants</a></li>
-                                <li class="active"><a href="#">Ajouter etudiant</a></li>
+                                <li><a href="#">Ajouter etudiant</a></li>
                             </ul>
                         </li>
 
-                        <li class="parent"><a href="#"><i class="fa fa-suitcase"></i> <span>Salles</span></a>
+                        <li class="parent active"><a href="#"><i class="fa fa-suitcase"></i> <span>Salles</span></a>
                             <ul class="children">
                                 <li><a href="salles.html">Liste des salles</a></li>
-                                <li><a href="ajouter_salles.html">Ajouter salle</a></li>
+                                <li class="active"><a href="#">Ajouter salle</a></li>
                             </ul>
                         </li>
                         
@@ -156,9 +157,9 @@
                                 <ul class="breadcrumb">
                                     <li><a href="#"><i class="glyphicon glyphicon-home"></i></a></li>
                                     <li><a href="#">Forms</a></li>
-                                    <li>Ajouter Etudiant</li>
+                                    <li>Ajouter Salle</li>
                                 </ul>
-                                <h4>Ajouter Etudiant</h4>
+                                <h4>Ajouter Salle</h4>
                             </div>
                         </div><!-- media -->
                     </div><!-- pageheader -->
@@ -183,59 +184,42 @@
                                         <div class="row">
                                             <div class="col-sm-6">
                                                 <div class="form-group">
-                                                    <label class="control-label">Prenom</label>
-                                                    <input type="text" name="firstname" class="form-control" />
+                                                    <label class="control-label">Numéro</label>
+                                                    <input type="text" name="id" class="form-control" />
                                                 </div><!-- form-group -->
                                             </div><!-- col-sm-6 -->
                                             
                                             <div class="col-sm-6">
                                                 <div class="form-group">
-                                                    <label class="control-label">Nom</label>
-                                                    <input type="text" name="lastname" class="form-control" />
+                                                    <label class="control-label">Nombre de place</label>
+                                                    <input type="text" name="nbr" class="form-control" />
                                                 </div><!-- form-group -->
                                             </div><!-- col-sm-6 -->
                                         </div><!-- row -->
                                   
                                         <div class="row">
-                                            <div class="col-sm-6">
-                                                <div class="form-group">
-                                                    <label class="control-label">Email</label>
-                                                    <input type="email" name="email" class="form-control" />
-                                                </div><!-- form-group -->
-                                            </div><!-- col-sm-6 -->
-                                            
-                                            <div class="col-sm-6">
-                                                <div class="form-group">
-                                                    <label class="control-label">Telephone</label>
-                                                    <input type="url" name="tele" class="form-control" />
-                                                </div><!-- form-group -->
-                                            </div><!-- col-sm-6 -->
-                                        </div><!-- row -->
-
-                                        <div class="row">
-                                            <div class="col-sm-6">
-                                                <div class="form-group">
-                                                    <label class="control-label">CNE</label>
-                                                    <input type="email" name="cne" class="form-control" />
-                                                </div><!-- form-group -->
-                                            </div><!-- col-sm-6 -->
-                                            
-                                            <div class="col-sm-6">
-                                                <div class="form-group">
-                                                    <label class="control-label">CIN</label>
-                                                    <input type="url" name="cin" class="form-control" />
-                                                </div><!-- form-group -->
-                                            </div><!-- col-sm-6 -->
-
                                             <div class="col-sm-12">
                                                 <div class="form-group">
-                                                    <label class="control-label">Adresse</label>
-                                                    <textarea class="form-control" rows="5" name="adresse"></textarea>
+                                                    
+                                                    <select id="select-search-hide" data-placeholder="Departement" class="width100p">
+                                                        <option value="">Departement</option>
+                                                        <option value="AK">dep1</option>
+                                                        <option value="HI">dep1</option>
+                                                        <option value="CA">dep1</option>
+                                                        <option value="NV">dep1</option>
+                                                        <option value="OR">dep1</option>
+                                                        <option value="WA">dep1</option>
+                                                        <option value="AZ">dep1</option>
+                                                        <option value="CO">dep1</option>
+                                                        
+                                                    </select>
                                                 </div><!-- form-group -->
-                                            </div><!-- col-sm-12 -->
-
+                                            </div><!-- col-sm-6 -->
+                                            
                                             
                                         </div><!-- row -->
+
+                                        
                                     </div><!-- panel-body -->
                                     <div class="panel-footer">
                                         <button class="btn btn-primary">Ajouter</button>
@@ -260,10 +244,25 @@
         <script src="js/pace.min.js"></script>
         <script src="js/retina.min.js"></script>
         <script src="js/jquery.cookies.js"></script>
-
+        <script src="js/select2.min.js"></script>
         <script src="js/custom.js"></script>
 
+
+
+         <script>
+            jQuery(document).ready(function() {
+                
+                // Select2
+                jQuery("#select-basic, #select-multi").select2();
+                jQuery('#select-search-hide').select2({
+                    minimumResultsForSearch: -1
+                });
+                
+                
+                
+            });
+        </script>
     </body>
 
-<!-- Mirrored from themepixels.com/demo/webpage/chain/form-layouts.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 09 May 2015 14:11:25 GMT -->
+
 </html>
